@@ -1,0 +1,209 @@
+*{
+    font-family: "Helvetica", sans-serif;
+}
+html,body{
+    height: 100%;
+}
+
+*, body, div, ul, li, p, h1, h2, h3, footer, img, input, legend, .btn-style{
+    margin: 0;
+    padding: 0;
+}
+.first {
+  height:100vh;
+  min-height:500px;
+  background-size:cover;
+  background-image: url("ny.jpg");
+  background-position: top center;
+}
+.second {
+  height: 20vh;
+  background-size:cover;
+  background-image: url("ny.jpg");
+  background-position: center;
+}
+
+.row{
+    margin-right: 0;
+    margin-left: 0;
+}
+.nav-overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000000;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    visibility: hidden;
+    z-index: 8000;
+}
+
+.container{
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+.container-fluid{
+    padding: 0;
+}
+a:hover{
+    color: inherit;
+}
+section {
+  height:calc(90% - 50px);
+  height: 90vh;
+}
+.jumbotron-fluid{
+    text-align: center;
+    padding-top: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.center-jumbo{
+    padding: 3% 0;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: block;
+    line-height: 5em;
+    display: table;
+}
+nav{
+    padding: 2% 0;
+    font-weight: 600;
+}
+.logo-wrapper{
+    font-size: 2.2em;
+    letter-spacing: .1em;
+    text-align: center;
+}
+.main-nav{
+    letter-spacing: .1em;
+    padding-left: 0;
+    text-align: left;
+}
+.dropdown-menu{
+    width: 40%;
+    position: relative;
+    -webkit-box-shadow: 0 8px 6px -6px #000;
+    -moz-box-shadow: 0 8px 6px -6px #000;
+    box-shadow: 0 10px 8px -8px #000;
+}
+.dropdown-item{
+    padding: 4% 10%;
+    white-space: normal;
+}
+.button-fill{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    /* padding: 10px 0; */
+    margin:0 auto;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    color:#000;
+    background-image: linear-gradient(to right, #fff 50%, #000 50%);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    -webkit-transition: all 0.25s ease-in;
+    -moz-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
+}
+.button-fill:hover {
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+  background-position: bottom right;
+  color: #fff;
+}
+
+.affix {
+  background-color: rgba(0,0,0,1);
+  -webkit-transition:padding 0.2s ease-out;
+  -moz-transition:padding 0.2s ease-out;
+  -o-transition:padding 0.2s ease-out;
+  transition:padding 0.2s ease-out;
+}
+.affix li a:hover, .affix a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.main-nav li{
+    text-transform: uppercase;
+    padding-top: 2.7%;
+    display: inline-block;
+    font-size: 1.2em;
+    margin: 0 1%;
+}
+nav a, .jumbotron-fluid{
+    color: white;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+.carousel{
+    margin-top: 65px;
+    background-color: black;
+}
+.carousel-caption{
+    bottom: 48%;
+    color: white;
+    background-color: #3BB273;
+    box-shadow: 2px 6px 2px #000000;
+}
+
+footer{
+    width: 100%;
+    max-width: 1280px;
+    font-size: 1.2em;
+    background-color: rgba(0,0,0,.8);
+}
+footer, footer a{
+    color: black;
+}
+.footer-menu{
+    padding-top: 2%;
+    font-size: 1.2em;
+    letter-spacing: .1em;
+    text-align: center;
+}
+.footer-menu li a:hover{
+    color: white;
+}
+.footer-menu h3{
+    margin-bottom: 2%;
+    text-decoration: underline;
+}
+.footer-wrapper, .text-center{
+    text-align: center;
+}
+.media-icons{
+    width: 12%;
+}
+.footer-bottom{
+    width: 100%;
+    padding: 2% 0;
+    letter-spacing: .1em;
+}
+.bottom-item{
+    display: inline-block;
+    padding: 0 1%;
+}
+.footer-bottom li{
+    list-style: none;
+    letter-spacing: .05em;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
