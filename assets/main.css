@@ -237,7 +237,7 @@ section {
     text-align: center;
 }
 .home-content{
-    background: rgba(155,230,245,1);
+    background: white;
     padding-bottom: 0;
 }
 .content a{
@@ -346,12 +346,6 @@ footer, footer a{
         font-size: 2.5em;
         padding-top: 35%;
         margin-bottom: 15%;
-    }
-    .content .row:nth-child(2) .col-lg-4:last-child{
-        padding-bottom: 0;
-    }
-    .content .row:nth-child(3) .col-lg-4:first-child{
-        padding-top: 0;
     }
     .center-jumbo{
         line-height: 3em;
