@@ -342,6 +342,14 @@ footer, footer a{
 }
 
 @media (min-width:400px) and (max-width: 769px){
+    .first h1 {
+        font-size: 2.5em;
+        padding-top: 35%;
+        margin-bottom: 15%;
+    }
+    .center-jumbo{
+        line-height: 3em;
+    }
     nav{
         background: #000;
     }
