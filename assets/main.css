@@ -22,7 +22,12 @@ html,body{
   background-image: url("ny.jpg");
   background-position: center;
 }
-
+.home-content .row{
+    padding: 4% 5%;
+}
+.home-content .row:first-child{
+    padding-bottom: 0;
+}
 .row{
     margin-right: 0;
     margin-left: 0;
@@ -57,18 +62,35 @@ section {
   height: 90vh;
 }
 .jumbotron-fluid{
+    height: inherit;
     text-align: center;
-    padding-top: 20%;
-    padding-left: 10%;
-    padding-right: 10%;
+    /* padding-top: 20%; */
+    padding-left: 0;
+    padding-right: 0;
 }
 .center-jumbo{
+    height: inherit;
     padding: 3% 0;
     width: 100%;
     background-color: rgba(0,0,0,.5);
     display: block;
     line-height: 5em;
     display: table;
+}
+.center-jumbo h1{
+    padding-top: 20%;
+}
+.content{
+    padding: 3% 0;
+    text-align: center;
+}
+.card{
+    width: inherit;
+    border: 0;
+}
+.card-body{
+    width: 18rem;
+    border: 1px solid rgba(0,0,0,.125);
 }
 nav{
     padding: 2% 0;
@@ -89,7 +111,7 @@ nav{
     position: relative;
     -webkit-box-shadow: 0 8px 6px -6px #000;
     -moz-box-shadow: 0 8px 6px -6px #000;
-    box-shadow: 0 10px 8px -8px #000;
+    box-shadow: 0 10px 8px -5px #000;
 }
 .dropdown-item{
     padding: 4% 10%;
@@ -107,10 +129,10 @@ nav{
     font-size: 14px;
     font-family: "Source Sans Pro", sans-serif;
     color:#000;
-    background-image: linear-gradient(to right, #fff 50%, #000 50%);
+    background-image: linear-gradient(to left, #fff 50%, #000 50%);
     background-size: 200% 100%;
     background-repeat: no-repeat;
-    background-position: bottom left;
+    background-position: bottom right;
     -webkit-transition: all 0.25s ease-in;
     -moz-transition: all 0.25s ease-in;
     transition: all 0.25s ease-in;
@@ -119,7 +141,7 @@ nav{
   -webkit-transition: all 0.25s ease-in;
   -moz-transition: all 0.25s ease-in;
   transition: all 0.25s ease-in;
-  background-position: bottom right;
+  background-position: bottom left;
   color: #fff;
 }
 
@@ -162,7 +184,6 @@ nav a, .jumbotron-fluid{
 
 footer{
     width: 100%;
-    max-width: 1280px;
     font-size: 1.2em;
     background-color: rgba(0,0,0,.8);
 }
