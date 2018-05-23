@@ -4,9 +4,16 @@ $(function(){
 
     // Get the navbar
     $(window).scroll(function(){
+        // if($('.first') == true){
+        // }
         if ($(window).scrollTop() > 150){
             $('nav').addClass('affix');
         }
+        // else if($('.second') == true) {
+        //     if ($(window).scrollTop() > 70){
+        //         $('nav').addClass('affix');
+        //     }
+        // }
         else{
             $('nav').removeClass('affix');
         }

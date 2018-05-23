@@ -55,12 +55,12 @@ html,body{
 }
 .open-title{
     color: #4C6FB8;
-    font-size: 3.6em;
+    font-size: 2.4em;
     letter-spacing: .03em;
-    padding-top: 3%;
+    padding-top: 4%;
 }
 .open-text{
-    padding: 5% 0 10% 0;
+    padding: 5% 0;
     text-align: left;
     font-size: 1.4em;
     letter-spacing: .04em;
@@ -118,68 +118,6 @@ h5{
 a:hover{
     color: white;
     text-decoration: underline;
-}
-section {
-  height:calc(90% - 50px);
-  height: 90vh;
-}
-.jumbotron-fluid{
-    height: inherit;
-    /* padding-top: 20%; */
-    padding-left: 0;
-    padding-right: 0;
-}
-.center-jumbo{
-    text-align: center;
-    height: inherit;
-    padding: 2% 0;
-    width: 100%;
-    background-color: rgba(0,0,0,.5);
-    line-height: 5em;
-    display: table;
-}
-.center-jumbo3{
-    text-align: center;
-    height: inherit;
-    width: 100%;
-    background-color: rgba(0,0,0,.5);
-    line-height: 5em;
-    display: table;
-}
-.center-jumbo2{
-    height: inherit;
-    width: 100%;
-    background-color: rgba(0,0,0,.3);
-    line-height: 1.8em;
-    font-size: 1.4em;
-    letter-spacing: .08em;
-    display: table;
-    padding: 15% 0;
-}
-.center-jumbo h1{
-    padding-top: 18%;
-}
-.content{
-    padding: 3% 0;
-    text-align: center;
-}
-.home-content{
-    background: rgba(155,230,245,1);
-    padding-bottom: 0;
-}
-.content a{
-    color: black;
-}
-.card{
-    width: inherit;
-    height: 100%;
-    border: 0;
-}
-.card-body{
-    width: 100%;
-    padding: 0 -15px;
-    padding-bottom: 14.1%;
-    border: 1px solid rgba(0,0,0,.125);
 }
 nav{
     padding: 2% 0;
@@ -254,6 +192,68 @@ nav{
     font-size: 1.2em;
     margin: 0 1%;
 }
+section {
+  height:calc(90% - 50px);
+  height: 90vh;
+}
+.jumbotron-fluid{
+    height: inherit;
+    /* padding-top: 20%; */
+    padding-left: 0;
+    padding-right: 0;
+}
+.center-jumbo{
+    text-align: center;
+    height: inherit;
+    padding: 2% 0;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    line-height: 5em;
+    display: table;
+}
+.center-jumbo3{
+    text-align: center;
+    height: inherit;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    line-height: 5em;
+    display: table;
+}
+.center-jumbo2{
+    height: inherit;
+    width: 100%;
+    background-color: rgba(0,0,0,.3);
+    line-height: 1.8em;
+    font-size: 1.4em;
+    letter-spacing: .08em;
+    display: table;
+    padding: 15% 0;
+}
+.center-jumbo h1{
+    padding-top: 18%;
+}
+.content{
+    padding: 3% 0;
+    text-align: center;
+}
+.home-content{
+    background: rgba(155,230,245,1);
+    padding-bottom: 0;
+}
+.content a{
+    color: black;
+}
+.card{
+    width: inherit;
+    height: 100%;
+    border: 0;
+}
+.card-body{
+    width: 100%;
+    padding: 0 -15px;
+    padding-bottom: 14.1%;
+    border: 1px solid rgba(0,0,0,.125);
+}
 nav a, .jumbotron-fluid{
     color: white;
 }
@@ -280,10 +280,16 @@ nav a, .jumbotron-fluid{
     -moz-box-shadow: 0 8px 6px -6px #000;
     box-shadow: 0 2px 6px 1px #000;
 }
+a.info-links{
+    display: block;
+    margin: 7% 0 1% 0;
+    color: #4C6FB0;
+    text-decoration: underline;
+}
 footer{
     width: 100%;
-    font-size: 1.2em;
-    background-color: rgba(0,0,0,.8);
+    font-size: 1em;
+    background-color: rgba(0,0,0,.6);
 }
 footer, footer a{
     color: black;
@@ -291,18 +297,19 @@ footer, footer a{
 .footer-menu a{
     text-transform: uppercase;
     font-size: .8em;
-    font-weight: 600;
 }
 .footer-menu{
-    padding-top: 3%;
+    padding-top: 4%;
     letter-spacing: .2em;
     text-align: center;
     list-style: none;
 }
+
 .footer-menu li a:hover{
-    color: white;
+    /* color: white; */
 }
 .footer-menu h3{
+    font-weight: 600;
     font-size: 1.3em;
     margin-bottom: 2%;
     text-decoration: underline;
@@ -326,12 +333,7 @@ footer, footer a{
     list-style: none;
     letter-spacing: .05em;
 }
-.text-left{
-    text-align: left;
-}
-.text-right{
-    text-align: right;
-}
+
 @media (min-width:400px) and (max-width: 769px){
     nav{
         background: #000;
