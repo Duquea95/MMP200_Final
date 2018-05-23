@@ -11,10 +11,22 @@ html,body{
 }
 .first {
   height:100vh;
-  min-height:500px;
+  min-height: 500px;
   background-size:cover;
   background-image: url("ny.jpg");
   background-position: top center;
+}
+.first:last-child{
+    background-position: top center;
+    margin-top: 5%;
+    height: inherit;
+    background-image: url("victim.jpg");
+}
+.tint{
+    width: 100%;
+    height: inherit;
+    background-image: rgba(0,0,0,.7);
+    background-size: contain;
 }
 .second {
   height: 20vh;
@@ -22,11 +34,48 @@ html,body{
   background-image: url("ny.jpg");
   background-position: center;
 }
+.color2{
+    background-color: #F36832;
+}
+.color1{
+    background-color: #4C6FB8;
+}
+.home-content .col-lg-4{
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .home-content .row{
-    padding: 4% 5%;
+    padding: 0 5%;
 }
 .home-content .row:first-child{
-    padding-bottom: 0;
+    /* padding-bottom: 5%; */
+}
+h5{
+    font-size: 1.6em;
+    letter-spacing: .03em;
+}
+.card-title{
+    padding-top: 10%;
+    margin-bottom: 0;
+}
+.card-text{
+    padding: 15% 0;
+    font-size: 1.3em;
+    letter-spacing: .04em;
+}
+.card-link{
+    display: inline-block;
+    padding: 6% 15%;
+    border-radius: 10px;
+    transition: .3s;
+    border: 1px solid black;
+}
+.card-link:hover{
+    -webkit-box-shadow: 0 8px 6px -6px #000;
+    -moz-box-shadow: 0 8px 6px -6px #000;
+    box-shadow: 0 2px 6px 1px #000;
+    font-size: 1.3em;
 }
 .row{
     margin-right: 0;
@@ -55,7 +104,8 @@ html,body{
     padding: 0;
 }
 a:hover{
-    color: inherit;
+    color: white;
+    text-decoration: underline;
 }
 section {
   height:calc(90% - 50px);
@@ -63,33 +113,58 @@ section {
 }
 .jumbotron-fluid{
     height: inherit;
-    text-align: center;
     /* padding-top: 20%; */
     padding-left: 0;
     padding-right: 0;
 }
 .center-jumbo{
+    text-align: center;
     height: inherit;
     padding: 3% 0;
     width: 100%;
     background-color: rgba(0,0,0,.5);
-    display: block;
     line-height: 5em;
     display: table;
 }
+.center-jumbo3{
+    text-align: center;
+    height: inherit;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    line-height: 5em;
+    display: table;
+}
+.center-jumbo2{
+    height: inherit;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    line-height: 5em;
+    display: table;
+    padding: 23% 0;
+}
 .center-jumbo h1{
-    padding-top: 20%;
+    padding-top: 18%;
 }
 .content{
     padding: 3% 0;
     text-align: center;
 }
+.home-content{
+    background: rgba(155,230,245,1);
+    padding-bottom: 0;
+}
+.content a{
+    color: black;
+}
 .card{
     width: inherit;
+    height: 100%;
     border: 0;
 }
 .card-body{
-    width: 18rem;
+    width: 100%;
+    padding: 0 -15px;
+    padding-bottom: 14.1%;
     border: 1px solid rgba(0,0,0,.125);
 }
 nav{
