@@ -18,15 +18,14 @@ html,body{
 }
 .first:last-child{
     background-position: top center;
-    margin-top: 5%;
+    margin-top: 3.4%;
     height: inherit;
     background-image: url("victim.jpg");
 }
-.tint{
-    width: 100%;
-    height: inherit;
-    background-image: rgba(0,0,0,.7);
-    background-size: contain;
+.first h1{
+    font-size: 4em;
+    margin-bottom: 3%;
+    font-weight: 600;
 }
 .second {
   height: 20vh;
@@ -35,32 +34,54 @@ html,body{
   background-position: center;
 }
 .color2{
-    background-color: #F36832;
+    background-color: #F34149;
 }
 .color1{
     background-color: #4C6FB8;
 }
-.home-content .col-lg-4{
-    padding-left: 0;
-    padding-right: 0;
+.lead{
+    font-size: 1.6em;
+    letter-spacing: .1em;
+    font-weight: 600;
 }
-
+.home-content .col-lg-4{
+    padding: .2%;
+}
 .home-content .row{
     padding: 0 5%;
 }
 .home-content .row:first-child{
     /* padding-bottom: 5%; */
 }
-h5{
-    font-size: 1.6em;
+.open-title{
+    color: #4C6FB8;
+    font-size: 3.6em;
     letter-spacing: .03em;
+    padding-top: 3%;
+}
+.open-text{
+    padding: 5% 0 10% 0;
+    text-align: left;
+    font-size: 1.4em;
+    letter-spacing: .04em;
+}
+.title2{
+    color: black;
+    padding-bottom: 3%;
+}
+h5{
+    font-size: 1.4em;
+    letter-spacing: .03em;
+    text-decoration: underline;
 }
 .card-title{
     padding-top: 10%;
     margin-bottom: 0;
+    text-transform: uppercase;
 }
 .card-text{
-    padding: 15% 0;
+    padding: 12% 5%;
+    text-align: center;
     font-size: 1.3em;
     letter-spacing: .04em;
 }
@@ -70,30 +91,21 @@ h5{
     border-radius: 10px;
     transition: .3s;
     border: 1px solid black;
+    font-weight: 600;
+    font-size: 1.2em;
+    letter-spacing: .1em;
 }
 .card-link:hover{
+    font-weight: 800;
     -webkit-box-shadow: 0 8px 6px -6px #000;
     -moz-box-shadow: 0 8px 6px -6px #000;
     box-shadow: 0 2px 6px 1px #000;
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 .row{
     margin-right: 0;
     margin-left: 0;
 }
-.nav-overlay{
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: #000000;
-    opacity: 0;
-    transition: opacity 0.2s ease-in-out;
-    visibility: hidden;
-    z-index: 8000;
-}
-
 .container{
     width: 100%;
     max-width: 100%;
@@ -120,7 +132,7 @@ section {
 .center-jumbo{
     text-align: center;
     height: inherit;
-    padding: 3% 0;
+    padding: 2% 0;
     width: 100%;
     background-color: rgba(0,0,0,.5);
     line-height: 5em;
@@ -137,10 +149,12 @@ section {
 .center-jumbo2{
     height: inherit;
     width: 100%;
-    background-color: rgba(0,0,0,.5);
-    line-height: 5em;
+    background-color: rgba(0,0,0,.3);
+    line-height: 1.8em;
+    font-size: 1.4em;
+    letter-spacing: .08em;
     display: table;
-    padding: 23% 0;
+    padding: 15% 0;
 }
 .center-jumbo h1{
     padding-top: 18%;
@@ -180,13 +194,15 @@ nav{
     letter-spacing: .1em;
     padding-left: 0;
     text-align: left;
+    display: block;
 }
 .dropdown-menu{
     width: 40%;
+    padding: 0;
     position: relative;
     -webkit-box-shadow: 0 8px 6px -6px #000;
     -moz-box-shadow: 0 8px 6px -6px #000;
-    box-shadow: 0 10px 8px -5px #000;
+    box-shadow: 0 4px 6px -1 #000;
 }
 .dropdown-item{
     padding: 4% 10%;
@@ -241,22 +257,29 @@ nav{
 nav a, .jumbotron-fluid{
     color: white;
 }
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
+.jumbo2-text{
+    margin-top: -3%;
+    text-align: center;
 }
-.carousel{
-    margin-top: 65px;
-    background-color: black;
+.jumbo2-text p{
+    font-size: 1.2em;
 }
-.carousel-caption{
-    bottom: 48%;
-    color: white;
-    background-color: #3BB273;
-    box-shadow: 2px 6px 2px #000000;
+.jumbo2-text h2{
+    text-decoration: underline;
+    padding-bottom: 8%;
+    font-size: 1.8em;
 }
-
+.jumbo2-text .button-fill{
+    margin-top: 10%;
+    font-size: 1.2em;
+    padding: 10% 10%;
+    width: 100%;
+    background-image: linear-gradient(to left, #fff 50%, #F34149 50%);
+    border-radius: 5px;
+    -webkit-box-shadow: 0 8px 6px -6px #000;
+    -moz-box-shadow: 0 8px 6px -6px #000;
+    box-shadow: 0 2px 6px 1px #000;
+}
 footer{
     width: 100%;
     font-size: 1.2em;
@@ -265,16 +288,22 @@ footer{
 footer, footer a{
     color: black;
 }
+.footer-menu a{
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: 600;
+}
 .footer-menu{
-    padding-top: 2%;
-    font-size: 1.2em;
-    letter-spacing: .1em;
+    padding-top: 3%;
+    letter-spacing: .2em;
     text-align: center;
+    list-style: none;
 }
 .footer-menu li a:hover{
     color: white;
 }
 .footer-menu h3{
+    font-size: 1.3em;
     margin-bottom: 2%;
     text-decoration: underline;
 }
@@ -302,4 +331,70 @@ footer, footer a{
 }
 .text-right{
     text-align: right;
+}
+@media (min-width:400px) and (max-width: 769px){
+    nav{
+        background: #000;
+    }
+    .main-nav{
+        display: none;
+        height: 100%;
+        padding-right: 0;
+        text-align: center;
+    }
+    .main-nav li{
+        display: block;
+        padding-top: 3%;
+        height: 25%;
+        margin: 0;
+    }
+    .main-nav li:first-child{
+        padding-top: 10%;
+    }
+
+    .main-nav a{
+        display: block;
+    }
+    .dropdown-menu{
+        width: 100%;
+    }
+    div.burger-container{
+    text-align: right;
+    margin-right: 30px;
+    z-index: 1049;
+    }
+    div.burger{
+        position: fixed;
+        top: 3.5%;
+        right: 5%;
+        display: inline-block;
+        z-index: 1050;
+    }
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 4px;
+        background-color: white;
+        /* background-color: rgba(255,255,255,1); */
+        transition: 0.5s;
+    }
+    .bar2{
+        margin: 5px 0;
+    }
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-6px, 6px);
+    }
+    .change .bar2 {
+        opacity: 0;
+    }
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-6px, -6px);
+    }
+    footer{
+        padding-top: 20%;
+    }
+    .footer-menu{
+        padding: 5% 0;
+    }
 }

@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="container-fluid">
-        <nav class="row fixed-top">
+        <nav id="dropdown-menu" class="row fixed-top">
             <div class="offset-lg-2 col-lg-3 logo-wrapper">
                 <a href="index.html">N.O.P.E.</a>
             </div>
@@ -37,15 +37,27 @@
                 <li class="nav-item"><a href="views/Recovery.html">Health Risks</a></li>
             </ul>
         </nav>
+        <div class="burger-container">
+            <div class="burger">
+                <div class="bar1 bar"></div>
+                <div class="bar2 bar"></div>
+                <div class="bar3 bar"></div>
+            </div>
+        </div>
         <section class="first">
             <div class="jumbotron-fluid">
                 <div class="container center-jumbo">
                     <h1 class="display-4">NYC Opioid Prevention & Education</h1>
-                    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                    <p class="lead">Promoting Opioid Addiction Awareness And Prevention in New York</p>
                 </div>
             </div>
         </section>
         <div class="content home-content">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="title2">Click To Learn More!</h2>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-lg-4">
                     <div class="card">
@@ -60,7 +72,7 @@
                     <div class="card">
                         <div class="card-body color2">
                             <h5 class="card-title">Proper Disposal</h5>
-                            <p class="card-text">Better safe than sorry! Educate patients on the best ways to store and dispose of opioid medication.</p>
+                            <p class="card-text">Better safe than sorry! Educate patients on the best ways to store and dispose of medication.</p>
                             <a href="views/dispose.html" class="card-link">Take Action</a>
                         </div>
                     </div>
@@ -79,8 +91,8 @@
                 <div class="col-lg-4">
                     <div class="card">
                         <div class="card-body color2">
-                            <h5 class="card-title">Medication for Addiction</h5>
-                            <p class="card-text">Need help kicking opioids? Learn more about medications to help during rehabilitation.</p>
+                            <h5 class="card-title"> Addiction Medication</h5>
+                            <p class="card-text">Need help quitting? Learn more about various medications used to help the cleaning process.</p>
                             <a href="views/meds.html" class="card-link">Take Action</a>
                         </div>
                     </div>
@@ -108,8 +120,10 @@
                 <div class="jumbotron-fluid">
                     <div class="container center-jumbo2">
                         <div class="row">
-                            <div class="col-lg-12">
-                                ok
+                            <div class="offset-lg-8 col-lg-4 jumbo2-text">
+                                <h2>You Are Not Alone!</h2>
+                                <p>Many New Yorkers are suffering from opioid addiction and are in need of assistance. Victims of addiction should not fear seeking help. Let us help!</p>
+                                <a class="button-fill" href="views/tcny.html">Everyone Deserves Help</a>
                             </div>
                         </div>
                     </div>
@@ -119,15 +133,27 @@
         <footer>
             <div class="footer-wrapper">
                 <div class="row">
-                    <ul class="footer-menu col-lg-6 col-sm-12">
+                    <ul class="footer-menu col-lg-4 col-sm-12">
                         <h3>Site Navigation</h4>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="views/prevention.html">Prevention</a></li>
-                        <li><a href="views/Recovery.html"Health Risks</a></li>
-                        <li><a href="views/education1.html">Educations</a></li>
+                        <li><a href="views/Recovery.html">Risks</a></li>
                     </ul>
-                    <div class="footer-menu col-lg-6 col-sm-12">
-                        “New York City” is copyright (c) 2014 Andrés Nieto Porras and made available under a <a href="#">Attribution-Noncommercial-Share Alike 2.0</a> license.
+                    <ul class="footer-menu col-lg-4 col-sm-12">
+                        <h3>Prevention</h4>
+                        <li><a href="views/opioids.html">Opioids</a></li>
+                        <li><a href="views/dispose.html">Safe Disposal</a></li>
+                        <li><a href="views/pain.html">Pain Managament</a></li>
+                    </ul>
+                    <ul class="footer-menu col-lg-4 col-sm-12">
+                        <h3>Treatment</h4>
+                        <li><a href="views/meds.html">Addication Medication</a></li>
+                        <li><a href="views/od.html">Overdose</a></li>
+                        <li><a href="views/tcny.html">Treatment Centers</a></li>
+                        <li><a href="views/stigma.html">Fight The Stigma</a></li>
+                    </ul>
+                    <div class="footer-menu col-lg-12 col-sm-12">
+                        “New York City” is copyright (c) 2014 Andrés Nieto Porras and made available under a <a href="https://www.flickr.com/photos/anieto2k/16654352517">Attribution-Noncommercial-Share Alike 2.0</a> license.<br>
+                        "Victim” is copyright (c) 2014 Andrés Nieto Porras and made available under a <a href="https://pixabay.com/en/addict-the-dependence-of-2713526/">Attribution-Noncommercial-Share Alike 2.0</a> license.
                     </div>
                 </div>
                 <div class="footer-bottom">
@@ -145,7 +171,7 @@
         </footer>
     </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="assets/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="assets/index.js"></script>
